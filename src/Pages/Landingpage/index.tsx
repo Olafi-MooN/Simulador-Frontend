@@ -16,23 +16,11 @@ const LandingPage = () => {
         {/* end navbar */}
 
         {/* header */}
-        <div className="header d-flex justify-content-between">
-            <div className="header-text" data-aos="fade-up">
-                <h1 className="header-title font-white">MedSim - Simulador de Casos Clínicos</h1>
+        <div className="header d-flex justify-content-around">
+            <div className="header-text align-self-center" data-aos="fade-up" id="center-content position-header">
+                <h1 className="header-title font-white">MedSim - Casos Clínicos</h1>
                 <h3 className="font-white">
-                    Proin volutpat, ex eu euismod pharetra, quam risus consequat libero, sit amet bibendum ipsum velit
-                    vitae
-                    ipsum.
-                    <br />
-                    <br />
-                    Pellentesque tempor pulvinar volutpat. Nulla consectetur vulputate mollis. Proin blandit pharetra
-                    augue,
-                    sit amet porttitor massa pretium at.
-                    <br />
-                    <br />
-                    Nam ullamcorper magna gravida metus tristique commodo id sit amet ex. Morbi volutpat, justo eget
-                    auctor
-                    pellentesque, enim erat tincidunt enim, vel consectetur nibh ipsum id mi.
+                    Como um simulador de Casos Clínicos, a ferramenta apresenta uma nova maneira de entedermos o paciente.
                 </h3>
             </div>
             <img src="img/10130.png" className="header-img" alt="" data-aos="zoom-in-left" />
@@ -40,7 +28,7 @@ const LandingPage = () => {
         {/* end header */}
 
         {/* create account form and description*/}
-        <div className="row-create-account row d-flex justify-content-between gx-0">
+        <div className="row-create-account row d-flex justify-content-between gx-0" id="center-content">
             {/* create account form */}
             <div className="col-12 col-lg-6 d-flex flex-column align-items-center" data-aos="fade-right" data-aos-easing="ease-in-sine">
                 <div className="create-account">
@@ -75,16 +63,9 @@ const LandingPage = () => {
 
             {/* create account description */}
             <div className="create-account-text col-12 col-lg-6 align-self-center" data-aos="fade-left" data-aos-easing="ease-in-sine">
-                <h2 className="title">Lorem ipsum dolor</h2>
-                <p className="text">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
-                    consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
-                    tincidunt augue. In molestie velit vel lorem convallis
-                    tempus.
+                <h2 className="title">Simples e Prático</h2>
+                <p className="text center-text">Revoluciona o aprendizado com conteúdos práticos e dinâmicos, auxiliando ainda mais os alunos no processo de entendimento de um caso.
                     <br /><br />
-                    Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
-                    consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
-                    tincidunt augue. In molestie velit vel lorem convallis
-                    tempus.
                 </p>
             </div>
             {/* end create account description*/}
@@ -96,16 +77,8 @@ const LandingPage = () => {
             <div className="row">
                 <div className="col-12 col-md-7 d-flex align-items-center">
                     <div className="container">
-                        <h2 className="title">Lorem ipsum dolor</h2>
-                        <p className="text">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
-                            consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
-                            tincidunt augue. In molestie velit vel lorem convallis
-                            tempus.
-                            <br /><br />
-                            Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
-                            magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
-                            malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
-                            odio.
+                        <h2 className="title center-text">Preenchimento Dinâmico</h2>
+                        <p className="text center-text">Possibilitando ao corpo docente realizar um cadastro de casos clínicos de forma prática e dinâmica, facilitando sua análise e correção.
                         </p>
                     </div>
                 </div>
@@ -121,16 +94,8 @@ const LandingPage = () => {
                 </div>
                 <div className="col-12 col-md-7 d-flex align-items-center">
                     <div className="container">
-                        <h2 className="title">Lorem ipsum dolor</h2>
-                        <p className="text">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
-                            consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
-                            tincidunt augue. In molestie velit vel lorem convallis
-                            tempus.
-                            <br /><br />
-                            Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
-                            magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
-                            malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
-                            odio.
+                        <h2 className="title">Feito por Alunos para Alunos</h2>
+                        <p className="text center-text">Desenvolvido com a união de estudantes de Medicina e Tecnologia, focado na praticidade e usabilidade.
                         </p>
                     </div>
                 </div>
@@ -140,16 +105,8 @@ const LandingPage = () => {
             <div className="row">
                 <div className="col-12 col-md-7 d-flex align-items-center">
                     <div className="container">
-                        <h2 className="title">Lorem ipsum dolor</h2>
-                        <p className="text">Lorem ipsum dolor sit amet, Fusce eu tincidunt augue. In molestie velit vel lorem
-                            consectetur adipiscing elit. Aliquam congue et lectus sed feugiat. Nam at purus lacus. Fusce eu
-                            tincidunt augue. In molestie velit vel lorem convallis
-                            tempus.
-                            <br /><br />
-                            Aliquam fermentum malesuada risus, aliquam aliquam libero tempor ac. Donec est arcu, consequat eu
-                            magna sit amet, cursus consectetur nisl. Pellentesque habitant morbi tristique senectus et netus et
-                            malesuada fames ac turpis egestas. Praesent elit ante, consequat suscipit posuere at, rhoncus nec
-                            odio.
+                        <h2 className="title">Auxiliando o aprendizado</h2>
+                        <p className="text center-text">Através de uma gama de exames e condutas que possibilitarão a identificação e cura dos pacientes.
                         </p>
                     </div>
                 </div>
@@ -196,6 +153,58 @@ const LandingPage = () => {
             </div>
         </div>
         {/*end login popup*/}
+        {/* footer */}
+        <footer className="footer">
+            {/* title and social icons */}
+            <div className="header-footer d-flex justify-content-between">
+                <h2 className="title font-white">MedSim</h2>
+                <div className="social-icons">
+                    <div className="social-icons">
+                        <a href="#" className="bi bi-instagram social-icon"></a>
+                        <a href="#" className="bi bi-linkedin social-icon"></a>
+                        <a href="#" className="bi bi-github social-icon"></a>
+                        <a href="#" className="bi bi-envelope-fill social-icon"></a>
+                    </div>
+                </div>
+            </div>
+            {/* end title and social icons */}
+
+            {/* links and copyright */}
+            <div className="row gx-0">
+                <div className="col-12 col-xl-6">
+                    <h3 className="col-title">Recursos</h3>
+                    <ul className="list-group">
+                        <a href="" className="list-group-item">Protótipo</a>
+                        <a href="" className="list-group-item">Artigo</a>
+                        <a href="" className="list-group-item">Código Fonte</a>
+                    </ul>
+                </div>
+                <div className="col-12 col-xl-6">
+                    <h3 className="col-title">Nosso Time</h3>
+                    <div className="container-our-team d-flex justify-content-between">
+                        <ul className="list-group our-team">
+                            <a href="" className="list-group-item">Flavio - (Orientador)</a>
+                            <a href="" className="list-group-item">Alan - TI (Back-end)</a>
+                            <a href="" className="list-group-item">Alef Santos - TI (Full-stack)</a>
+                            <a href="" className="list-group-item">João V. Guimarães - TI (Front-end, UX/UI)</a>
+                            <a href="" className="list-group-item">Ana Elisa - Medicina (Integrante Discente)</a>
+                        </ul>
+                        <ul className="list-group our-team">
+                            <a href="" className="list-group-item">Ester Olivia - Medicina (Integrante Discente)</a>
+                            <a href="" className="list-group-item">Lucas Eduardo - Medicina (Integrante Discente)</a>
+                            <a href="" className="list-group-item">Yuri Corrêa - Medicina (Integrante Discente)</a>
+                            <a href="" className="list-group-item">[Nome Sobrenome] - [area] [especialização]</a>
+                            <a href="" className="list-group-item">[Nome Sobrenome] - [area] [especialização]</a>
+                        </ul>
+                    </div>
+                </div>
+                <h4 className="copyright">©MedSim 2022 Todos os direitos reservados.</h4>
+            </div>
+            {/* end links and copyright */}
+
+        </footer>
+        {/* end footer */}
+
     </>
 }
 

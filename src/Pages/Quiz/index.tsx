@@ -10,32 +10,38 @@ const Quiz = () => {
             id: 1, 
             title: 'Análise inicial',
             quiz: [
-                {id: 1, question: 'Há quanto tempo está assim?', response: 'Estou assim a 10 dias.'}
+                {id: 1, question: 'Há quanto tempo está assim?', response: 'Estou assim a 10 dias.'},
+                {id: 2, question: 'Onde dói, exatamente?', response: 'Aqui na lateral esquerda das costas, chegando até a lateral da barriga.'},
+                {id: 3, question: 'Como você descreveria essa dor?', response: 'É como se tivesse alguém me colocando uma faca nas costas, me fincando.'}
             ] 
         },
         {
             id: 2, 
             title: 'Exames Físicos',
             quiz: [
-                {id: 3, question: 'Sinais vitais (Monitoramento)', response: 'Sinais vitais (Monitoramento)'},
-                {id: 4, question: 'Ectoscopia', response: 'Sinais vitais (Monitoramento)'},
-                {id: 5, question: 'Oroscopia', response: 'Sinais vitais (Monitoramento)'}
+                {id: 4, question: 'Sinais vitais (Monitoramento)', response: 'FC: 110 bpm FR: 20 irpm PA: 120 x 70 mmHg Temp.: 38,5 °C'},
+                {id: 5, question: 'Ectoscopia', response: 'BEG: bom estado geral, um pouco prostrado Anictérico Acianótico Tempo de enchimento capilar < 2 seg Normocorado, hidratado Febril Bem orientado em tempo e espaço.'},
+                {id: 6, question: 'Linfonodos', response: 'Linfonodos não palpáveis.'},
+                {id: 7, question: 'Tireóide', response: 'Tireóide de consistência fibroelástica, sem nódulos ou bócio, móvel e indolor.'},
+                {id: 8, question: 'Aparelho Respiratório', response: 'Tórax simétrico, sem cicatrizes ou retrações, Expansibilidade preservada bilateralmente, Frêmito toracovocal normal, Timpanismo fisiológico à percussão, Murmúrio vesicular fisiológico, sem sinais de esforço.'}
+                
             ] 
         },
         {
             id: 3, 
             title: 'Exames Complementares',
             quiz: [
-                {id: 6, question: 'PCR', response: 'Estou assim a 10 dias.'},
-                {id: 7, question: 'Íons', response: 'Estou assim a 10 dias.'},
-                {id: 8, question: 'Hemograma', response: 'Estou assim a 10 dias.'},
+                {id: 9, question: 'PCR', response: '120 mg/L. Valor de Referência homem adulto = 5'},
+                {id: 10, question: 'Íons', response: 'Cálcio sérico = 11,0 Potássio sérico = 5,0 Sódio sérico = 145'},
+                {id: 11, question: 'Hemograma', response: 'Hemácias: 4 milhões Hemoglobina: 10 g/dL Hematócrito: 40% VCM: 90 fL HCM: 30 pg CHCM: 33 g/dL Leucócitos : 17.100 /mm³ com desvio à esquerda Plaquetas: 280.000'}
             ] 
         },
         {
             id: 4, 
             title: 'Conduta',
             quiz: [
-                {id: 1, question: 'Internação hospitalar', response: 'Estou assim a 10 dias.'}
+                {id: 12, question: 'Internação hospitalar', response: 'Paciente em conduta de Internação Hospitalar.'},
+                {id: 13, question: 'Antibióticos: Piperacilina + Tazobactam Endovenosos', response: 'Conduta aplicada. Melhora progressiva nos sintomas e nos resultados dos exames. Início da remissão da infecção.'}
             ] 
         },
     ] as ICasosModel[];

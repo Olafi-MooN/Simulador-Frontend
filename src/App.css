@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #e6e6e6;
+  background-color: #dddcdc;
 }
 
 .container-md,
@@ -104,8 +104,10 @@ ul {
   padding: 0;
 }
 
-
 /*-------------------------------- landingpage ------------------------------------*/
+.center-text{
+  text-align: center;
+}
 
 /* navbar */
 
@@ -156,7 +158,14 @@ ul {
 }
 
 .header-img {
-  height: 600px;
+  height: 500px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#center-content#position-header{
+  margin-top: 45px;
 }
 
 /* create account form (whitout right text)*/
@@ -240,6 +249,14 @@ ul {
 .text-container#text-two,
 .text-container#text-three {
   padding: 20px 50px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#center-content{
+  padding: 20px 50px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .text-container .title {
@@ -251,7 +268,7 @@ ul {
 }
 
 .text-container .text {
-  text-align: start;
+  text-align: center;
   font-size: 18px;
   color: var(--color-grey);
   font-weight: 500;
@@ -260,8 +277,6 @@ ul {
 .text-container .img-fluid {
   padding: 60px;
 }
-
-
 
 /* paragraph call create account */
 
@@ -665,12 +680,11 @@ ul {
 }
 
 .footer .header-footer .social-icon {
-  margin: 0 4px;
+  margin: 0 8px;
   color: var(--color-white);
 }
 
 .footer .header-footer .social-icon:hover {
-  margin: 0 4px;
   color: var(--color-blue-hover);
 }
 

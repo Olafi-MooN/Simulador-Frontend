@@ -1,8 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = (props: any) => {
+  const location = useLocation();
+  
   return <>
+    { location.pathname !== "/" && <React.Fragment>
     <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
         <Link className="navbar-brand navbar-title" to="/home"> <img src="/img/logo.png" className='img-fluid logo' width={120}></img></Link>
@@ -14,7 +17,7 @@ const Navbar = (props: any) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link select-color" href="index.html">Home</a>
+              <Link className="nav-link select-color" to="home">Home</Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="">Estatísticas</a>
@@ -46,7 +49,9 @@ const Navbar = (props: any) => {
     <div>
       {props.children}
     </div>
+    </React.Fragment>}
   </>
+
 }
 
 export { Navbar };
