@@ -184,7 +184,7 @@ const LandingPage = () => {
 
 
         {/* create account form */}
-        <div className="col-12 d-flex flex-column align-items-center">
+        {/* <div className="col-12 d-flex flex-column align-items-center">
             <div className="create-account">
                 <a href="#" className="bi bi-x d-flex flex-row-reverse" data-bs-dismiss="modal"></a>
                 <h2 className="title">MedSim</h2>
@@ -212,10 +212,8 @@ const LandingPage = () => {
                     <a className="have-account" href="#">Já possuo uma conta!</a>
                 </form>
             </div>
-        </div>
+        </div> */}
         {/* end create account form*/}
-
-        
 
     </>
 }

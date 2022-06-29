@@ -3,7 +3,10 @@ import { CaseCards, ICaseCardsModel } from '../../Components/CaseCards';
 
 const Home = () => {
   const casosList: ICaseCardsModel[] = [
-    { id: 1, description: 'Homem de 45 anos, agricultor, vem à UBS desacompanhado, queixando-se de dor nas costas.', title: 'Doutor(a), estou com muita dor nas costas', scenery: 'Cenário: Unidade básica de saúde.' }
+    { id: 1, description: 'Homem de 45 anos, agricultor, vem à UBS desacompanhado, queixando-se de dor nas costas.', title: 'Doutor(a), estou com muita dor nas costas', scenery: 'Cenário: Unidade básica de saúde.' ,img: 'img/heart.png'},
+    { id: 1, description: 'Mulher de 32 anos, dona de casa, vem à UBS acompanhada, queixando-se de febre.', title: 'Doutor(a), estou com muita febre e dor de cabeça', scenery: 'Cenário: Unidade básica de saúde.' ,img: 'img/temperature2.png'},
+    { id: 1, description: 'Criança de 12 anos, estudante, vem à UBS acompanhada, com fortes dores na barriga.', title: 'Doutor(a), minha barriga doi muito', scenery: 'Cenário: Unidade básica de saúde.' ,img: 'img/report.png'},
+    { id: 1, description: 'Homem de 70 anos, aposentado, vem à UBS desacompanhado, queixando-se de dor nos rins', title: 'Doutor(a), meus rins estão me matando', scenery: 'Cenário: Unidade básica de saúde.' ,img: 'img/symptoms.png'}
   ];
 
   return <>
@@ -16,7 +19,7 @@ const Home = () => {
 
       {/* cards column*/}
       <div className="col-12 col-xl-7 cases-card-col">
-        {casosList.map(item => <CaseCards description={item.description} id={item.id} scenery={item.scenery} title={item.title} key={item.id} />)}
+        {casosList.map(item => <CaseCards img={item.img}  description={item.description} id={item.id} scenery={item.scenery} title={item.title} key={item.id} />)}
       </div>
 
       {/* space between coluns */}
@@ -107,8 +110,6 @@ const Home = () => {
               <a href="" className="list-group-item">Ester Olivia - Medicina (Integrante Discente)</a>
               <a href="" className="list-group-item">Lucas Eduardo - Medicina (Integrante Discente)</a>
               <a href="" className="list-group-item">Yuri Corrêa - Medicina (Integrante Discente)</a>
-              <a href="" className="list-group-item">[Nome Sobrenome] - [area] [especialização]</a>
-              <a href="" className="list-group-item">[Nome Sobrenome] - [area] [especialização]</a>
             </ul>
           </div>
         </div>
