@@ -12,7 +12,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #dddcdc;
+  background-color: rgb(240, 240, 240);
 }
 
 .container-md,
@@ -40,6 +40,7 @@ a {
   background-color: var(--color-blue);
   border-color: var(--color-blue);
   color: var(--color-white);
+  transition: .5s;
 }
 
 .btn-1:hover {
@@ -48,15 +49,17 @@ a {
   color: var(--color-white);
 }
 
+
 .btn-2 {
   background-color: var(--color-white);
   border-color: var(--color-white);
-  color: var(--color-blue);
+  color: var(--color-black);
+  transition: .5s;
 }
 
 .btn-2:hover {
-  background-color: var(--color-blue);
-  border-color: var(--color-blue);
+  background-color: var(--color-blue-hover);
+  border-color: var(--color-blue-hover);
   color: var(--color-white);
 }
 
@@ -64,11 +67,25 @@ a {
   background-color: red;
   border-color: red;
   color: var(--color-white);
+  transition: .5s;
 }
 
 .btn-3:hover {
   background-color: rgb(190, 10, 10);
   border-color: rgb(190, 10, 10);
+  color: var(--color-white);
+}
+
+.btn-4 {
+  background: none;
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
+  transition: .5s;
+}
+
+.btn-4:hover {
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
   color: var(--color-white);
 }
 
@@ -105,205 +122,100 @@ ul {
 }
 
 /*-------------------------------- landingpage ------------------------------------*/
-.center-text{
-  text-align: center;
+
+/* navbar  */
+#getstarting-navbar {
+  background-color: var(--color-blue) !important;
 }
 
-/* navbar */
-
-.landingpage-nav {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  background: transparent linear-gradient(180deg, #3A3A3AC2 0%, #434343A1 18%, #4A4A4A7A 33%, #62626242 64%, #B5B5B500 100%) 0% 0% no-repeat padding-box;
-  opacity: 1;
+#getstarting-navbar .navbar-brand .img-fluid {
+  width: 150px;
 }
 
 
-.landingpage-nav .logo {
-  margin: 0px 0 0px 24px;
-  font-weight: 500;
+/* header */
 
+.landing-header-principal{
+background-color: var(--color-blue);
 }
 
-/* .landingpage-nav .btn-login {
-  margin: 15px 24px 0 0;
-  border-radius: 20px;
-  padding: 8px 22px 8px 22px;
-  color: var(--color-white);
-  z-index: 10000;
-} */
-
-/*  header */
-
-.header {
+#landig-header {
+  padding: 20px 30px 5px 30px;
   background-color: var(--color-blue);
-  padding: 0 0 40px 0;
-  box-shadow: 6px 6px 10px #00000029;
+  margin: auto;
+  max-width: 1800px;
 }
 
-.header .header-text {
-  height: 360px;
-  width: 500px;
-  margin: 100px 20px 20px 80px;
-  color: var(--color-white);
-  font-weight: 500;
+#landig-header .col-md-5 {
+  padding: 0 40px;
 }
 
-.header .header-title {
-  text-align: center;
-  margin-bottom: 35px;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.header-img {
-  height: 500px;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-#center-content#position-header{
-  margin-top: 45px;
-}
-
-/* create account form (whitout right text)*/
-
-.row-create-account {
-  position: relative;
-  top: -60px;
-}
-
-.create-account {
-  width: auto;
-  height: auto;
-  background: var(--color-white) 0% 0% no-repeat padding-box;
-  box-shadow: 6px 6px 10px #00000029;
-  border-radius: 43px;
-  padding: 42px 70px;
-
-}
-
-.create-account .title {
-  text-align: center;
-  color: var(--color-blue);
-  font-weight: 600;
-  padding: 0 0 15px 0;
-}
-
-.create-account .subtitle {
-  text-align: center;
-  color: var(--color-grey);
-  padding-bottom: 15px;
-  font-weight: 400;
-}
-
-.create-account .btn-create {
-  width: 130px;
-  height: 45px;
-  border-radius: 30px;
-  background-color: var(--color-blue);
-  border-color: var(--color-blue);
-}
-
-.crate-account .create-account-form .mb-3 .form-control {
-  border-radius: 100px;
-  width: 300px;
-}
-
-.crate-account .create-account-form .mb-3 .form-text {
-  font-size: 13px;
-}
-
-.have-account {
-  color: var(--color-blue);
-  padding-top: 15px;
-}
-
-/* create account description (right text)*/
-
-.create-account-text {
+#landig-header .title {
   margin: 0;
-  padding: 20px;
-
-}
-
-.create-account-text .title {
-  text-align: center;
-  color: var(--color-blue);
-  padding: 22px 0;
-  font-weight: 600;
-}
-
-.create-account-text .text {
-  text-align: center;
-  font-size: 18px;
-  color: var(--color-grey);
-  font-weight: 500;
-}
-
-/* body text */
-
-.text-container#text-one,
-.text-container#text-two,
-.text-container#text-three {
-  padding: 20px 50px;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-#center-content{
-  padding: 20px 50px;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-.text-container .title {
-  text-align: center;
-  color: var(--color-blue);
-  font-weight: 700;
-  margin-bottom: 50px;
   padding: 0;
+  margin-bottom: 30px;
+  font-size: 36px;
+  color: var(--color-white);
 }
 
-.text-container .text {
-  text-align: center;
-  font-size: 18px;
-  color: var(--color-grey);
-  font-weight: 500;
+#landig-header .text {
+  color: var(--color-white);
+  line-height: 1.4;
 }
 
-.text-container .img-fluid {
-  padding: 60px;
+.lp-main-img {
+  margin-top: 20px;
+  width: 500px;
 }
 
-/* paragraph call create account */
+.btns-header .btn {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.btns-header .btn-4:hover {
+  background-color: var(--color-blue-hover);
+  border-color: var(--color-blue-hover);
+  color: var(--color-white);
+}
+
+/* body */
+
+.body-lp {
+  margin-top: 100px;
+  padding: 0 50px;
+}
+
+.body-lp .title {
+  color: var(--color-blue);
+  padding-left: 0;
+}
+
+.body-lp .text {
+  line-height: 1.5;
+}
+
+
+.lp-img-1,
+.lp-img-2,
+.lp-img-3 {
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.body-lp.container-xxl {
+  margin: 80px auto;
+}
+
 
 .paragraph-create-account {
-  margin-top: 0px;
-  top: 0;
+  margin: 80px auto;
 }
 
 .paragraph-create-account .text {
-  color: #3A3A3A;
-  font-size: 26px;
-  text-align: center;
-  margin-top: 45px;
-  font-weight: 600;
+  font-size: 22px;
 }
 
-.paragraph-create-account .btn {
-  width: 150px;
-  height: 45px;
-  text-align: center;
-  background-color: #18D6CA;
-  border-color: #18D6CA;
-  border-radius: 100px;
-  margin-bottom: 80px;
-  margin-top: 45px;
-
-}
 
 /*Login Popup*/
 
@@ -395,6 +307,66 @@ ul {
 .link-ca-small {
   font-size: 14px;
   color: #18D6CA;
+}
+
+.create-account .bi-x {
+  color: var(--color-blue);
+  font-size: 30px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.row-create-account {
+  position: relative;
+  top: -60px;
+}
+
+.create-account {
+  position: relative;
+  width: auto;
+  height: auto;
+  background: var(--color-white) 0% 0% no-repeat padding-box;
+  box-shadow: 6px 6px 10px #00000029;
+  border-radius: 43px;
+  padding: 42px 70px;
+
+}
+
+.create-account .title {
+  text-align: center;
+  color: var(--color-blue);
+  font-weight: 600;
+  padding: 0 0 15px 0;
+}
+
+.create-account .subtitle {
+  text-align: center;
+  color: var(--color-grey);
+  padding-bottom: 15px;
+  font-weight: 400;
+}
+
+.create-account .btn-create {
+  width: 130px;
+  height: 45px;
+  border-radius: 30px;
+  background-color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+.crate-account .create-account-form .mb-3 .form-control {
+  border-radius: 100px;
+  width: 300px;
+}
+
+.crate-account .create-account-form .mb-3 .form-text {
+  font-size: 13px;
+}
+
+.have-account {
+  color: var(--color-blue);
+  padding-top: 15px;
 }
 
 
@@ -889,7 +861,8 @@ body {
   #profile .form-control {
     width: 320px;
   }
-  #profile.row{
+
+  #profile.row {
     margin: 100px 10px 30px 10px;
   }
 }
